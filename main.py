@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from datetime import datetime
 
 app = FastAPI()
 
@@ -9,3 +10,11 @@ def read_root():
 @app.get("/ping")
 def ping():
     return {"message": "pong"}
+
+@app.get("/time")
+def get_server_time():
+    """
+    Returns the current server time in ISO format.
+    """
+    now = datetime.utcnow()
+    return {"server_time": now.isoformat() + "Z"}
