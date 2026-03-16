@@ -9,7 +9,7 @@ def read_root():
 
 @app.get("/ping")
 def ping():
-    return {"message": "pigeon"}
+    return {"message": "pong"}
 
 @app.get("/time")
 def get_server_time():
