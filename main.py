@@ -22,3 +22,8 @@ def get_server_time():
 @app.get("/add")
 def add_numbers(a: int, b: int):
     return {"result": a + b}
+
+@app.get("/mul")
+def add_numbers(a: int, b: int):
+    return {"result": a * b}
+
