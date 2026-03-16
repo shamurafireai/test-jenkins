@@ -18,3 +18,7 @@ def get_server_time():
     """
     now = datetime.utcnow()
     return {"server_time": now.isoformat() + "Z"}
+
+@app.get("/add")
+def add_numbers(a: int, b: int):
+    return {"result": a + b}
