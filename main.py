@@ -30,3 +30,7 @@ def add_numbers(a: int, b: int):
 @app.get("/div")
 def add_numbers(a: int, b: int):
     return {"result": a / b}
+    
+@app.get("/mula")
+def show_message():
+    return {"message": "welcome to deshimula"}
