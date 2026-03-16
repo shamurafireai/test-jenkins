@@ -27,3 +27,6 @@ def add_numbers(a: int, b: int):
 def add_numbers(a: int, b: int):
     return {"result": a * b}
 
+@app.get("/div")
+def add_numbers(a: int, b: int):
+    return {"result": a / b}
