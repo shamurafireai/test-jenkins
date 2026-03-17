@@ -34,3 +34,6 @@ def add_numbers(a: int, b: int):
 @app.get("/mula")
 def show_message():
     return {"message": "welcome to deshimula"}
+@app.get("/sajid")
+def show_message():
+    return {"message": "amar bou vaat radhe ni"}
